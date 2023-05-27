@@ -45,6 +45,12 @@
         "lintFilePatterns": ["packages/backend/**/*.ts"]
       }
     },
+    "db-migrate": {
+      "command": "npx sequelize-cli db:migrate"
+    },
+    "db-seeds": {
+      "command": "npx sequelize-cli db:seed:all"
+    },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
