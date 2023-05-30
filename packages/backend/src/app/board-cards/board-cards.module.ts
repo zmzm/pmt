@@ -7,6 +7,6 @@ import { CardComment } from '../card-comments/entities/card-comment.entity';
 
 @Module({
   providers: [BoardCardsResolver, BoardCardsService],
-  imports: [SequelizeModule.forFeature([CardComment])   ],
+  imports: [SequelizeModule.forFeature([CardComment])],
 })
 export class BoardCardsModule {}
