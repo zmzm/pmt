@@ -1,7 +1,6 @@
 import * as React from 'react';
 
 import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
 import List from '@mui/material/List';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
@@ -11,10 +10,11 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+// import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 
 import { mainListItems, secondaryListItems } from './listItems';
-import { AppBar, Drawer } from './styled';
+import { AppBar, Drawer, DrawerHeader, Toolbar } from './styled';
 
 export default function Dashboard() {
   const [open, setOpen] = React.useState(true);
@@ -25,11 +25,7 @@ export default function Dashboard() {
   return (
     <Box sx={{ display: 'flex' }}>
       <AppBar position="absolute" open={open}>
-        <Toolbar
-          sx={{
-            pr: '24px', // keep right padding when drawer closed
-          }}
-        >
+        <Toolbar>
           <IconButton
             edge="start"
             color="inherit"
@@ -59,27 +55,30 @@ export default function Dashboard() {
         </Toolbar>
       </AppBar>
       <Drawer variant="permanent" open={open}>
-        <Toolbar
-          sx={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'flex-end',
-            px: [1],
-          }}
-        >
-          <Typography
-            component="h1"
-            variant="h6"
-            color="inherit"
-            noWrap
-            sx={{ flexGrow: 1 }}
+        <DrawerHeader>
+          <Toolbar
+            sx={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'flex-end',
+              px: [1],
+            }}
           >
-            Workspace name
-          </Typography>
-          <IconButton onClick={toggleDrawer}>
-            <ChevronLeftIcon />
-          </IconButton>
-        </Toolbar>
+            <Typography
+              component="h1"
+              variant="h6"
+              color="inherit"
+              noWrap
+              sx={{ flexGrow: 1 }}
+            >
+              Workspace name
+            </Typography>
+            <IconButton onClick={toggleDrawer}>
+              <ChevronLeftIcon color="inherit" />
+            </IconButton>
+          </Toolbar>
+        </DrawerHeader>
+
         <Divider />
         <List component="nav">
           {mainListItems}
