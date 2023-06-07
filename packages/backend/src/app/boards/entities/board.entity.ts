@@ -10,13 +10,14 @@ import {
 } from 'sequelize-typescript';
 import { Team } from '../../teams/entities/team.entity';
 import { BoardList } from '../../board-lists/entities/board-list.entity';
+import { Workspace } from '../../workspaces/entities/workspaces.entity';
 
 interface BoardCreationAttrs {
   name: string;
   closed: boolean;
 }
 @ObjectType()
-@Table({ tableName: 'board' })
+@Table({ tableName: 'boards' })
 export class Board extends Model<Board, BoardCreationAttrs> {
   @Column({
     type: DataType.INTEGER,
@@ -36,7 +37,7 @@ export class Board extends Model<Board, BoardCreationAttrs> {
   name: string;
 
   @Column({
-    type: DataType.STRING,
+    type: DataType.BOOLEAN,
     allowNull: false,
   })
   @Field(() => Boolean, { description: 'Is board closed', defaultValue: false })
@@ -46,10 +47,17 @@ export class Board extends Model<Board, BoardCreationAttrs> {
   @Column({ type: DataType.INTEGER })
   teamId: number;
 
+  @ForeignKey(() => Workspace)
+  @Column({ type: DataType.INTEGER })
+  workspaceId: number;
+
   @HasMany(() => BoardList)
   @Field(() => [BoardList], { description: 'Board lists' })
   lists: BoardList[];
 
   @BelongsTo(() => Team)
   team: Team;
+
+  @BelongsTo(() => Workspace)
+  workspace: Workspace;
 }

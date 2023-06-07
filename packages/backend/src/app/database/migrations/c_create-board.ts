@@ -34,6 +34,14 @@ module.exports = {
         },
         allowNull: false,
       },
+      workspaceId: {
+        type: Sequelize.DataTypes.INTEGER,
+        references: {
+          model: 'workspaces',
+          key: 'id',
+        },
+        allowNull: false,
+      },
     });
   },
   async down(queryInterface) {
