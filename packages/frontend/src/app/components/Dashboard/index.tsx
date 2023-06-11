@@ -10,13 +10,12 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
-// import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 
 import { mainListItems, secondaryListItems } from './listItems';
-import { AppBar, Drawer, DrawerHeader, Toolbar } from './styled';
+import { AppBar, Drawer, Toolbar } from './styled';
 
-export default function Dashboard() {
+export const Dashboard = () => {
   const [open, setOpen] = React.useState(true);
   const toggleDrawer = () => {
     setOpen(!open);
@@ -45,7 +44,7 @@ export default function Dashboard() {
             noWrap
             sx={{ flexGrow: 1 }}
           >
-            Dashboard
+            Dashboard name
           </Typography>
           <IconButton color="inherit">
             <Badge badgeContent={4} color="secondary">
@@ -55,30 +54,20 @@ export default function Dashboard() {
         </Toolbar>
       </AppBar>
       <Drawer variant="permanent" open={open}>
-        <DrawerHeader>
-          <Toolbar
-            sx={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'flex-end',
-              px: [1],
-            }}
+        <Toolbar>
+          <Typography
+            component="h1"
+            variant="h6"
+            color="inherit"
+            noWrap
+            sx={{ flexGrow: 1 }}
           >
-            <Typography
-              component="h1"
-              variant="h6"
-              color="inherit"
-              noWrap
-              sx={{ flexGrow: 1 }}
-            >
-              Workspace name
-            </Typography>
-            <IconButton onClick={toggleDrawer}>
-              <ChevronLeftIcon color="inherit" />
-            </IconButton>
-          </Toolbar>
-        </DrawerHeader>
-
+            Workspace name
+          </Typography>
+          <IconButton onClick={toggleDrawer}>
+            <ChevronLeftIcon color="inherit" />
+          </IconButton>
+        </Toolbar>
         <Divider />
         <List component="nav">
           {mainListItems}
@@ -107,4 +96,4 @@ export default function Dashboard() {
       </Box>
     </Box>
   );
-}
+};
