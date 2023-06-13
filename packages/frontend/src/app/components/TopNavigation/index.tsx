@@ -18,7 +18,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 const pages = ['Workspaces', 'Recent', 'Favorite'];
 const settings = ['Profile', 'Account', 'Logout'];
 
-const TopNavigation = () => {
+export const TopNavigation = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
   );
@@ -165,4 +165,3 @@ const TopNavigation = () => {
     </AppBar>
   );
 };
-export default TopNavigation;

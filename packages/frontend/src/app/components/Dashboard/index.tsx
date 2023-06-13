@@ -16,7 +16,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import { mainListItems, secondaryListItems } from './listItems';
 import { AppBar, Drawer, DrawerHeader, Toolbar } from './styled';
 
-export default function Dashboard() {
+export const Dashboard = () => {
   const [open, setOpen] = React.useState(true);
   const toggleDrawer = () => {
     setOpen(!open);
@@ -107,4 +107,4 @@ export default function Dashboard() {
       </Box>
     </Box>
   );
-}
+};
