@@ -1,8 +1,8 @@
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
+import { TopBar } from '@pmt/main/features/top-bar';
 import { Dashboard } from './components/Dashboard';
-import { TopNavigation } from './components/TopNavigation';
 
 const defaultTheme = createTheme();
 
@@ -11,7 +11,7 @@ export function App() {
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline />
       <div>
-        <TopNavigation />
+        <TopBar />
         <main style={{ position: 'relative' }}>
           <Dashboard />
         </main>

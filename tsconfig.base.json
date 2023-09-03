@@ -14,7 +14,14 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@pmt/main/features/side-nav": [
+        "packages/libs/main/features/side-nav/src/index.ts"
+      ],
+      "@pmt/main/features/top-bar": [
+        "packages/libs/main/features/top-bar/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
