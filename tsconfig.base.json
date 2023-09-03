@@ -20,7 +20,8 @@
       ],
       "@pmt/main/features/top-bar": [
         "packages/libs/main/features/top-bar/src/index.ts"
-      ]
+      ],
+      "@pmt/main/layouts/app": ["packages/libs/main/layouts/app/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
