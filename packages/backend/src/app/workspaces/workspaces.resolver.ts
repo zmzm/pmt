@@ -1,11 +1,11 @@
 import { UseGuards } from '@nestjs/common';
 import { Resolver, Query, Mutation, Args, Int } from '@nestjs/graphql';
-import { WorkspacesService } from './workspaces.service';
-import { Workspace } from './entities/workspaces.entity';
-import { CreateWorkspaceInput } from './dto/create-workspace.input';
 import { Roles } from '../auth/roles.decorator';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 import { RolesGuard } from '../auth/roles.guard';
+import { WorkspacesService } from './workspaces.service';
+import { Workspace } from './entities/workspaces.entity';
+import { CreateWorkspaceInput } from './dto/create-workspace.input';
 import { UpdateWorkspaceInput } from './dto/update-workspace.input';
 
 @Resolver(() => Workspace)

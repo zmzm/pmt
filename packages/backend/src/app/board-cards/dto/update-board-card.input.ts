@@ -1,5 +1,5 @@
-import { CreateBoardCardInput } from './create-board-card.input';
 import { Field, InputType, Int, PartialType } from '@nestjs/graphql';
+import { CreateBoardCardInput } from './create-board-card.input';
 
 @InputType()
 export class UpdateBoardCardInput extends PartialType(CreateBoardCardInput) {

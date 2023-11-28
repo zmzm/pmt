@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
+import { InjectModel } from '@nestjs/sequelize';
 import { CreateBoardCardInput } from './dto/create-board-card.input';
 import { UpdateBoardCardInput } from './dto/update-board-card.input';
-import { InjectModel } from '@nestjs/sequelize';
 import { BoardCard } from './entities/board-card.entity';
 
 @Injectable()

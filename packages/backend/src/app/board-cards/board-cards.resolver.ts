@@ -1,12 +1,12 @@
 import { UseGuards } from '@nestjs/common';
 import { Resolver, Query, Mutation, Args, Int } from '@nestjs/graphql';
+import { Roles } from '../auth/roles.decorator';
+import { JwtAuthGuard } from '../auth/jwt-auth.guard';
+import { RolesGuard } from '../auth/roles.guard';
 import { BoardCardsService } from './board-cards.service';
 import { BoardCard } from './entities/board-card.entity';
 import { CreateBoardCardInput } from './dto/create-board-card.input';
 import { UpdateBoardCardInput } from './dto/update-board-card.input';
-import { Roles } from '../auth/roles.decorator';
-import { JwtAuthGuard } from '../auth/jwt-auth.guard';
-import { RolesGuard } from '../auth/roles.guard';
 
 @Resolver(() => BoardCard)
 export class BoardCardsResolver {

@@ -1,10 +1,10 @@
 import { Module } from '@nestjs/common';
 import { SequelizeModule } from '@nestjs/sequelize';
 
-import { TeamsService } from './teams.service';
-import { TeamsResolver } from './teams.resolver';
 import { Board } from '../boards/entities/board.entity';
 import { User } from '../users/entities/user.entity';
+import { TeamsService } from './teams.service';
+import { TeamsResolver } from './teams.resolver';
 
 @Module({
   providers: [TeamsResolver, TeamsService],

@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
-import { CardCommentsService } from './card-comments.service';
-import { CardCommentsResolver } from './card-comments.resolver';
 import { SequelizeModule } from '@nestjs/sequelize';
 import { User } from '../users/entities/user.entity';
 import { BoardCard } from '../board-cards/entities/board-card.entity';
+import { CardCommentsResolver } from './card-comments.resolver';
+import { CardCommentsService } from './card-comments.service';
 
 @Module({
   providers: [CardCommentsResolver, CardCommentsService],
