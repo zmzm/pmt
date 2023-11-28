@@ -1,12 +1,12 @@
 import { UseGuards } from '@nestjs/common';
 import { Resolver, Query, Mutation, Args, Int } from '@nestjs/graphql';
+import { Roles } from '../auth/roles.decorator';
+import { JwtAuthGuard } from '../auth/jwt-auth.guard';
+import { RolesGuard } from '../auth/roles.guard';
 import { CardCommentsService } from './card-comments.service';
 import { CardComment } from './entities/card-comment.entity';
 import { CreateCardCommentInput } from './dto/create-card-comment.input';
 import { UpdateCardCommentInput } from './dto/update-card-comment.input';
-import { Roles } from '../auth/roles.decorator';
-import { JwtAuthGuard } from '../auth/jwt-auth.guard';
-import { RolesGuard } from '../auth/roles.guard';
 
 @Resolver(() => CardComment)
 export class CardCommentsResolver {
