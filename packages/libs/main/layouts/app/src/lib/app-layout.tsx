@@ -1,6 +1,6 @@
 import { Box, Stack } from '@mui/material';
-import { SideNav } from '@pmt/main/features/side-nav';
-import { TopBar } from '@pmt/main/features/top-bar';
+import { SideNav } from '@task-flow/main/features/side-nav';
+import { TopBar } from '@task-flow/main/features/top-bar';
 import { useState } from 'react';
 import { Outlet } from 'react-router-dom';
 

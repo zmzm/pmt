@@ -1,5 +1,5 @@
 {
-  "name": "@pmt/main/features/top-bar",
+  "name": "@task-flow/main/features/top-bar",
   "version": "0.0.1",
   "main": "./index.js",
   "types": "./index.d.ts",

@@ -1,5 +1,5 @@
-import type { Meta } from '@storybook/react';
 import { TopNavigation } from './index';
+import type { Meta } from '@storybook/react';
 
 const Story: Meta<typeof TopNavigation> = {
   component: TopNavigation,
