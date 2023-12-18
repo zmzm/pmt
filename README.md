@@ -1,4 +1,4 @@
-# Project management tool (trello clone)
+# Task Flow (trello clone)
 
 ## Technologies
 - NestJS (https://docs.nestjs.com)
