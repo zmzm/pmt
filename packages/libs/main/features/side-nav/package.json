@@ -1,5 +1,5 @@
 {
-  "name": "@pmt/main/features/side-nav",
+  "name": "@task-flow/main/features/side-nav",
   "version": "0.0.1",
   "main": "./index.js",
   "types": "./index.d.ts",

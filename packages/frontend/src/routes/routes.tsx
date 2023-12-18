@@ -1,5 +1,5 @@
 import { Route, Routes as ReactRouterDOM } from 'react-router-dom';
-import { AppLayout } from '@pmt/main/layouts/app';
+import { AppLayout } from '@task-flow/main/layouts/app';
 import { Dashboard } from '../app/components/Dashboard';
 
 export function Routes() {

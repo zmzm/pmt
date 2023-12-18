@@ -3,7 +3,7 @@
   "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "packages/libs/main/layouts/app/src",
   "projectType": "library",
-  "tags": ["scope:main\"", "\"type:layouts"],
+  "tags": ["scope:main", "type:layouts"],
   "targets": {
     "lint": {
       "executor": "@nx/linter:eslint",

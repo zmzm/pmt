@@ -1,5 +1,5 @@
 {
-  "name": "@pmt/main/layouts/app",
+  "name": "@task-flow/main/layouts/app",
   "version": "0.0.1",
   "main": "./index.js",
   "types": "./index.d.ts",
