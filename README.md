@@ -1,4 +1,4 @@
-# Task Flow (trello clone)
+# Task Flow
 
 ## Technologies
 - NestJS (https://docs.nestjs.com)
