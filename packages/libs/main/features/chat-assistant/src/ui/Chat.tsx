@@ -7,8 +7,8 @@ import { LinearProgress } from '@task-flow/shared/ui/linear-progress';
 import { Button } from '@task-flow/shared/ui/button';
 import { CircularProgress } from '@task-flow/shared/ui/circular-progress';
 import { TextField } from '@mui/material';
-import { MessageDto } from '../models/MessageDto';
-import Message from './Message';
+import { MessageDto } from '../models/message-dto';
+import Message from './message';
 
 const Chat: React.FC = () => {
   const [isWaiting, setIsWaiting] = useState<boolean>(false);

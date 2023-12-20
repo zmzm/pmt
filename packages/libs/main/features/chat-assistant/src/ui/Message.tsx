@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { MessageDto } from '../models/MessageDto';
+import { MessageDto } from '../models/message-dto';
 
 interface MessageProps {
   message: MessageDto;
