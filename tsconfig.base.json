@@ -21,56 +21,154 @@
       "@task-flow/main/features/top-bar": [
         "packages/libs/main/features/top-bar/src/index.ts"
       ],
-      "@task-flow/main/layouts/app": ["packages/libs/main/layouts/app/src/index.ts"],
-      "@task-flow/shared/providers/mui": ["packages/libs/shared/providers/mui/src/index.ts"],
-      "@task-flow/shared/ui/alert": ["packages/libs/shared/ui/alert/src/index.ts"],
-      "@task-flow/shared/ui/aspect-ratio": ["packages/libs/shared/ui/aspect-ratio/src/index.ts"],
-      "@task-flow/shared/ui/autocomplete": ["packages/libs/shared/ui/autocomplete/src/index.ts"],
-      "@task-flow/shared/ui/avatar": ["packages/libs/shared/ui/avatar/src/index.ts"],
-      "@task-flow/shared/ui/badge": ["packages/libs/shared/ui/badge/src/index.ts"],
+      "@task-flow/main/layouts/app": [
+        "packages/libs/main/layouts/app/src/index.ts"
+      ],
+      "@task-flow/shared/providers/mui": [
+        "packages/libs/shared/providers/mui/src/index.ts"
+      ],
+      "@task-flow/shared/ui/alert": [
+        "packages/libs/shared/ui/alert/src/index.ts"
+      ],
+      "@task-flow/shared/ui/aspect-ratio": [
+        "packages/libs/shared/ui/aspect-ratio/src/index.ts"
+      ],
+      "@task-flow/shared/ui/autocomplete": [
+        "packages/libs/shared/ui/autocomplete/src/index.ts"
+      ],
+      "@task-flow/shared/ui/avatar": [
+        "packages/libs/shared/ui/avatar/src/index.ts"
+      ],
+      "@task-flow/shared/ui/badge": [
+        "packages/libs/shared/ui/badge/src/index.ts"
+      ],
       "@task-flow/shared/ui/box": ["packages/libs/shared/ui/box/src/index.ts"],
-      "@task-flow/shared/ui/breadcrumbs": ["packages/libs/shared/ui/breadcrumbs/src/index.ts"],
-      "@task-flow/shared/ui/button": ["packages/libs/shared/ui/button/src/index.ts"],
-      "@task-flow/shared/ui/calendar": ["packages/libs/shared/ui/calendar/src/index.ts"],
-      "@task-flow/shared/ui/card": ["packages/libs/shared/ui/card/src/index.ts"],
-      "@task-flow/shared/ui/card-flow": ["packages/libs/shared/ui/card-flow/src/index.ts"],
-      "@task-flow/shared/ui/checkbox": ["packages/libs/shared/ui/checkbox/src/index.ts"],
-      "@task-flow/shared/ui/chip": ["packages/libs/shared/ui/chip/src/index.ts"],
-      "@task-flow/shared/ui/circular-progress": ["packages/libs/shared/ui/circular-progress/src/index.ts"],
-      "@task-flow/shared/ui/collapse": ["packages/libs/shared/ui/collapse/src/index.ts"],
-      "@task-flow/shared/ui/date-picker": ["packages/libs/shared/ui/date-picker/src/index.ts"],
-      "@task-flow/shared/ui/date-range-picker": ["packages/libs/shared/ui/date-range-picker/src/index.ts"],
-      "@task-flow/shared/ui/divider": ["packages/libs/shared/ui/divider/src/index.ts"],
-      "@task-flow/shared/ui/drawer": ["packages/libs/shared/ui/drawer/src/index.ts"],
-      "@task-flow/shared/ui/forms": ["packages/libs/shared/ui/forms/src/index.ts"],
-      "@task-flow/shared/ui/global-app-styles": ["packages/libs/shared/ui/global-app-styles/src/index.ts"],
-      "@task-flow/shared/ui/grid": ["packages/libs/shared/ui/grid/src/index.ts"],
-      "@task-flow/shared/ui/input": ["packages/libs/shared/ui/input/src/index.ts"],
-      "@task-flow/shared/ui/linear-progress": ["packages/libs/shared/ui/linear-progress/src/index.ts"],
-      "@task-flow/shared/ui/link": ["packages/libs/shared/ui/link/src/index.ts"],
-      "@task-flow/shared/ui/list": ["packages/libs/shared/ui/list/src/index.ts"],
-      "@task-flow/shared/ui/loader": ["packages/libs/shared/ui/loader/src/index.ts"],
-      "@task-flow/shared/ui/menu": ["packages/libs/shared/ui/menu/src/index.ts"],
-      "@task-flow/shared/ui/modal": ["packages/libs/shared/ui/modal/src/index.ts"],
-      "@task-flow/shared/ui/mode-toggle": ["packages/libs/shared/ui/mode-toggle/src/index.ts"],
-      "@task-flow/shared/ui/pagination": ["packages/libs/shared/ui/pagination/src/index.ts"],
-      "@task-flow/shared/ui/pdf-view": ["packages/libs/shared/ui/pdf-view/src/index.ts"],
-      "@task-flow/shared/ui/popover": ["packages/libs/shared/ui/popover/src/index.ts"],
-      "@task-flow/shared/ui/radio-button": ["packages/libs/shared/ui/radio-button/src/index.ts"],
-      "@task-flow/shared/ui/select": ["packages/libs/shared/ui/select/src/index.ts"],
-      "@task-flow/shared/ui/select-multiple": ["packages/libs/shared/ui/select-multiple/src/index.ts"],
-      "@task-flow/shared/ui/sheet": ["packages/libs/shared/ui/sheet/src/index.ts"],
-      "@task-flow/shared/ui/skeleton": ["packages/libs/shared/ui/skeleton/src/index.ts"],
-      "@task-flow/shared/ui/slider": ["packages/libs/shared/ui/slider/src/index.ts"],
-      "@task-flow/shared/ui/stack": ["packages/libs/shared/ui/stack/src/index.ts"],
-      "@task-flow/shared/ui/switch": ["packages/libs/shared/ui/switch/src/index.ts"],
-      "@task-flow/shared/ui/table": ["packages/libs/shared/ui/table/src/index.ts"],
-      "@task-flow/shared/ui/tabs": ["packages/libs/shared/ui/tabs/src/index.ts"],
-      "@task-flow/shared/ui/textarea": ["packages/libs/shared/ui/textarea/src/index.ts"],
-      "@task-flow/shared/ui/tooltip": ["packages/libs/shared/ui/tooltip/src/index.ts"],
-      "@task-flow/shared/ui/top-loader": ["packages/libs/shared/ui/top-loader/src/index.ts"],
-      "@task-flow/shared/ui/typography": ["packages/libs/shared/ui/typography/src/index.ts"],
-
+      "@task-flow/shared/ui/breadcrumbs": [
+        "packages/libs/shared/ui/breadcrumbs/src/index.ts"
+      ],
+      "@task-flow/shared/ui/button": [
+        "packages/libs/shared/ui/button/src/index.ts"
+      ],
+      "@task-flow/shared/ui/calendar": [
+        "packages/libs/shared/ui/calendar/src/index.ts"
+      ],
+      "@task-flow/shared/ui/card": [
+        "packages/libs/shared/ui/card/src/index.ts"
+      ],
+      "@task-flow/shared/ui/card-flow": [
+        "packages/libs/shared/ui/card-flow/src/index.ts"
+      ],
+      "@task-flow/shared/ui/checkbox": [
+        "packages/libs/shared/ui/checkbox/src/index.ts"
+      ],
+      "@task-flow/shared/ui/chip": [
+        "packages/libs/shared/ui/chip/src/index.ts"
+      ],
+      "@task-flow/shared/ui/circular-progress": [
+        "packages/libs/shared/ui/circular-progress/src/index.ts"
+      ],
+      "@task-flow/shared/ui/collapse": [
+        "packages/libs/shared/ui/collapse/src/index.ts"
+      ],
+      "@task-flow/shared/ui/date-picker": [
+        "packages/libs/shared/ui/date-picker/src/index.ts"
+      ],
+      "@task-flow/shared/ui/date-range-picker": [
+        "packages/libs/shared/ui/date-range-picker/src/index.ts"
+      ],
+      "@task-flow/shared/ui/divider": [
+        "packages/libs/shared/ui/divider/src/index.ts"
+      ],
+      "@task-flow/shared/ui/drawer": [
+        "packages/libs/shared/ui/drawer/src/index.ts"
+      ],
+      "@task-flow/shared/ui/forms": [
+        "packages/libs/shared/ui/forms/src/index.ts"
+      ],
+      "@task-flow/shared/ui/global-app-styles": [
+        "packages/libs/shared/ui/global-app-styles/src/index.ts"
+      ],
+      "@task-flow/shared/ui/grid": [
+        "packages/libs/shared/ui/grid/src/index.ts"
+      ],
+      "@task-flow/shared/ui/input": [
+        "packages/libs/shared/ui/input/src/index.ts"
+      ],
+      "@task-flow/shared/ui/linear-progress": [
+        "packages/libs/shared/ui/linear-progress/src/index.ts"
+      ],
+      "@task-flow/shared/ui/link": [
+        "packages/libs/shared/ui/link/src/index.ts"
+      ],
+      "@task-flow/shared/ui/list": [
+        "packages/libs/shared/ui/list/src/index.ts"
+      ],
+      "@task-flow/shared/ui/loader": [
+        "packages/libs/shared/ui/loader/src/index.ts"
+      ],
+      "@task-flow/shared/ui/menu": [
+        "packages/libs/shared/ui/menu/src/index.ts"
+      ],
+      "@task-flow/shared/ui/modal": [
+        "packages/libs/shared/ui/modal/src/index.ts"
+      ],
+      "@task-flow/shared/ui/mode-toggle": [
+        "packages/libs/shared/ui/mode-toggle/src/index.ts"
+      ],
+      "@task-flow/shared/ui/pagination": [
+        "packages/libs/shared/ui/pagination/src/index.ts"
+      ],
+      "@task-flow/shared/ui/pdf-view": [
+        "packages/libs/shared/ui/pdf-view/src/index.ts"
+      ],
+      "@task-flow/shared/ui/popover": [
+        "packages/libs/shared/ui/popover/src/index.ts"
+      ],
+      "@task-flow/shared/ui/radio-button": [
+        "packages/libs/shared/ui/radio-button/src/index.ts"
+      ],
+      "@task-flow/shared/ui/select": [
+        "packages/libs/shared/ui/select/src/index.ts"
+      ],
+      "@task-flow/shared/ui/select-multiple": [
+        "packages/libs/shared/ui/select-multiple/src/index.ts"
+      ],
+      "@task-flow/shared/ui/sheet": [
+        "packages/libs/shared/ui/sheet/src/index.ts"
+      ],
+      "@task-flow/shared/ui/skeleton": [
+        "packages/libs/shared/ui/skeleton/src/index.ts"
+      ],
+      "@task-flow/shared/ui/slider": [
+        "packages/libs/shared/ui/slider/src/index.ts"
+      ],
+      "@task-flow/shared/ui/stack": [
+        "packages/libs/shared/ui/stack/src/index.ts"
+      ],
+      "@task-flow/shared/ui/switch": [
+        "packages/libs/shared/ui/switch/src/index.ts"
+      ],
+      "@task-flow/shared/ui/table": [
+        "packages/libs/shared/ui/table/src/index.ts"
+      ],
+      "@task-flow/shared/ui/tabs": [
+        "packages/libs/shared/ui/tabs/src/index.ts"
+      ],
+      "@task-flow/shared/ui/textarea": [
+        "packages/libs/shared/ui/textarea/src/index.ts"
+      ],
+      "@task-flow/shared/ui/tooltip": [
+        "packages/libs/shared/ui/tooltip/src/index.ts"
+      ],
+      "@task-flow/shared/ui/top-loader": [
+        "packages/libs/shared/ui/top-loader/src/index.ts"
+      ],
+      "@task-flow/shared/ui/typography": [
+        "packages/libs/shared/ui/typography/src/index.ts"
+      ],
+      "libs/main/features/chat-assistant": [
+        "packages/libs/main/features/chat-assistant/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

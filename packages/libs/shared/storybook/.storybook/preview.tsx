@@ -1,7 +1,7 @@
-import { Preview } from '@storybook/react'
+import { Preview } from '@storybook/react';
 
-import { DocsContainer } from './docs-container'
-import { StoryWrapper } from './story-wrapper'
+import { DocsContainer } from './docs-container';
+import { StoryWrapper } from './story-wrapper';
 
 const preview: Preview = {
   decorators: [
@@ -29,6 +29,6 @@ const preview: Preview = {
       },
     },
   },
-}
+};
 
-export default preview
+export default preview;
