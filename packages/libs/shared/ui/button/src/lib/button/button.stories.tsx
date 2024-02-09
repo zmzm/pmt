@@ -37,6 +37,18 @@ export const Primary = {
   },
 };
 
+export const Colors: Story = {
+  render: (args) => (
+    <Stack direction="row" gap={2}>
+      <Button color="primary" label="primary" />
+      <Button color="neutral" label="neutral" />
+      <Button color="danger" label="danger" />
+      <Button color="success" label="success" />
+      <Button color="warning" label="warning" />
+    </Stack>
+  ),
+};
+
 export const Disabled: Story = {
   args: {
     disabled: true,
