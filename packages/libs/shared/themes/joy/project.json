@@ -1,0 +1,26 @@
+{
+  "name": "libs-shared-themes-joy",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/themes/joy/src",
+  "projectType": "library",
+  "tags": ["scope:shared", "type:theme"],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/shared/themes/joy",
+        "main": "packages/libs/shared/themes/joy/src/index.ts",
+        "tsConfig": "packages/libs/shared/themes/joy/tsconfig.lib.json",
+        "assets": ["packages/libs/shared/themes/joy/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/libs/shared/themes/joy/**/*.ts"]
+      }
+    }
+  }
+}

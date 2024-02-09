@@ -11,6 +11,7 @@ import {
 } from '@mui/joy/styles';
 import CssBaseline from '@mui/joy/CssBaseline';
 import { GlobalAppStyles } from '@task-flow/shared/ui/global-app-styles';
+import { JoyTheme } from '@task-flow/shared/themes/joy';
 
 export interface MuiProviderProps {
   children: ReactNode;
@@ -24,7 +25,7 @@ export function MuiProvider({
   children,
   includeCssBaseline = true,
   materialTheme = materialExtendTheme(),
-  joyTheme = extendTheme(),
+  joyTheme = JoyTheme,
   defaultMode = 'system',
 }: MuiProviderProps) {
   return (

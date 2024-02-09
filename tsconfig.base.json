@@ -27,6 +27,9 @@
       "@task-flow/shared/providers/mui": [
         "packages/libs/shared/providers/mui/src/index.ts"
       ],
+      "@task-flow/shared/themes/joy": [
+        "packages/libs/shared/themes/joy/src/index.ts"
+      ],
       "@task-flow/shared/ui/alert": [
         "packages/libs/shared/ui/alert/src/index.ts"
       ],
